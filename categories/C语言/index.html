@@ -7,21 +7,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>linux下压缩和解压缩指令 - 梦见明日</title>
+<title>分类: C语言 - 梦见明日</title>
 
 
-    <meta name="description" content="关于压缩和解压缩命令之前在win10时把所有本地歌曲压缩成了zip包放到了移动硬盘里备了份,足足有9个G,昨天在ubuntu18.04下想用图形化直接解压到网易云的音乐存储目录,但解压出来的歌曲的所有信息全都变成了乱码,但歌曲播放还是正常的,显然这是编码解码不一致造成的 ,因为图形化解压没法指定字符集,因此还是使用了命令行来解决了这个问题,同时把在网上查到的一些比较全的压缩解压缩指令记个笔记; 如">
-<meta property="og:type" content="article">
-<meta property="og:title" content="linux下压缩和解压缩指令">
-<meta property="og:url" content="http://yoursite.com/2020/04/02/linux%E4%B8%8B%E5%8E%8B%E7%BC%A9%E5%92%8C%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%8C%87%E4%BB%A4/index.html">
+    <meta name="description" content="梦见明日的博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="梦见明日">
+<meta property="og:url" content="http://yoursite.com/categories/C%E8%AF%AD%E8%A8%80/index.html">
 <meta property="og:site_name" content="梦见明日">
-<meta property="og:description" content="关于压缩和解压缩命令之前在win10时把所有本地歌曲压缩成了zip包放到了移动硬盘里备了份,足足有9个G,昨天在ubuntu18.04下想用图形化直接解压到网易云的音乐存储目录,但解压出来的歌曲的所有信息全都变成了乱码,但歌曲播放还是正常的,显然这是编码解码不一致造成的 ,因为图形化解压没法指定字符集,因此还是使用了命令行来解决了这个问题,同时把在网上查到的一些比较全的压缩解压缩指令记个笔记; 如">
+<meta property="og:description" content="梦见明日的博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="article:published_time" content="2020-04-02T00:47:54.000Z">
-<meta property="article:modified_time" content="2020-04-04T00:35:37.836Z">
 <meta property="article:author" content="Ren Qinghe">
-<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
@@ -81,7 +78,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="linux下压缩和解压缩指令" height="28">
+                <img src="/images/logo.png" alt="梦见明日" height="28">
             
             </a>
         </div>
@@ -119,24 +116,36 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/categories">分类</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">C语言</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    
 <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-04-02T00:47:54.000Z">2020-04-02</time>
+                <time class="level-item has-text-grey" datetime="2020-04-04T02:09:18.000Z">2020-04-04</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/linux-shell/">linux shell</a>
+                <a class="has-link-grey -link" href="/categories/C%E8%AF%AD%E8%A8%80/">C语言</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    16 分钟 读完 (大约 2472 个字)
+                    2 分钟 读完 (大约 258 个字)
                 </span>
                 
                 
@@ -145,31 +154,34 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                linux下压缩和解压缩指令
+                <a class="has-link-black-ter" href="/2020/04/04/linux-%E4%B8%8B%E5%A4%8D%E4%B9%A0c%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E6%97%A5%E8%AE%B0-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/">linux 下复习c语言编程日记(长期更新)</a>
             
         </h1>
         <div class="content">
-            <h2 id="关于压缩和解压缩命令"><a href="#关于压缩和解压缩命令" class="headerlink" title="关于压缩和解压缩命令"></a>关于压缩和解压缩命令</h2><p>之前在win10时把所有本地歌曲压缩成了zip包放到了移动硬盘里备了份,足足有9个G,昨天在ubuntu18.04下想用图形化直接解压到网易云的音乐存储目录,但解压出来的歌曲的所有信息全都变成了乱码,但歌曲播放还是正常的,显然这是编码解码不一致造成的 ,因为图形化解压没法指定字符集,因此还是使用了命令行来解决了这个问题,同时把在网上查到的一些比较全的压缩解压缩指令记个笔记;</p>
-<h3 id="如何解决的我这个问题"><a href="#如何解决的我这个问题" class="headerlink" title="如何解决的我这个问题:"></a>如何解决的我这个问题:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip -O GBK  *.zip # GBK为你要指定的解码字符集,要与压缩时的字符集对应上才不会乱码,win下压缩的多为GBK编码</span><br></pre></td></tr></table></figure>
-
-<h3 id="其他压缩解压命令"><a href="#其他压缩解压命令" class="headerlink" title="其他压缩解压命令"></a>其他压缩解压命令</h3><blockquote>
-<p>以下转自 <a href="https://blog.csdn.net/u014704496/article/details/38944567">https://blog.csdn.net/u014704496/article/details/38944567</a></p>
+            <p>自从找到工作之后就一直计划着把这四年大学里没好好学的或者忘却了的课程复习一遍,那么就从C开始吧:</p>
+<h2 id="2020-04-04"><a href="#2020-04-04" class="headerlink" title="2020.04.04"></a>2020.04.04</h2><blockquote>
+<p>操作系统: ubuntu18.04 </p>
+<p>编辑: gedit</p>
+<p>编译: gcc</p>
 </blockquote>
-<h4 id="1-tar"><a href="#1-tar" class="headerlink" title="1:tar"></a>1:tar</h4><p> tar [-cxtzjvfpPN] 文件与目录 ….<br> 参数：<br> -c ：建立一个压缩文件的参数指令(create 的意思)；<br> -x ：解开一个压缩文件的参数指令！<br> -t ：查看 tarfile 里面的文件！<br> 特别注意，在参数的下达中， c/x/t 仅能存在一个！不可同时存在！<br> 因为不可能同时压缩与解压缩。<br> -z ：是否同时具有 gzip 的属性？亦即是否需要用 gzip 压缩？<br> -j ：是否同时具有 bzip2 的属性？亦即是否需要用 bzip2 压缩？<br> -v ：压缩的过程中显示文件！这个常用，但不建议用在背景执行过程！<br> -f ：使用档名，请留意，在 f 之后要立即接档名喔！不要再加参数！<br>　　　例如使用『 tar -zcvfP tfile sfile』就是错误的写法，要写成<br>　　　『 tar -zcvPf tfile sfile』才对喔！<br> -p ：使用原文件的原来属性（属性不会依据使用者而变）<br> -P ：可以使用绝对路径来压缩！<br> -N ：比后面接的日期(yyyy/mm/dd)还要新的才会被打包进新建的文件中！<br> –exclude FILE：在压缩的过程中，不要将 FILE 打包！<br> 范例：<br> 范例一：将整个 /etc 目录下的文件全部打包成为 /tmp/etc.tar<br> [root@linux ~]# tar -cvf /tmp/etc.tar /etc<br> 范例二：查阅上述 /tmp/etc.tar.gz 文件内有哪些文件？<br> [root@linux ~]# tar -ztvf /tmp/etc.tar.gz<br> # 由于我们使用 gzip 压缩，所以要查阅该 tar file 内的文件时，<br> # 就得要加上 z 这个参数了！这很重要的！<br> 范例三：将 /tmp/etc.tar.gz 文件解压缩在 /usr/local/src 底下<br> [root@linux ~]# cd /usr/local/src<br> [root@linux src]# tar -zxvf /tmp/etc.tar.gz<br> # 在预设的情况下，我们可以将压缩档在任何地方解开的！以这个范例来说，<br> # 我先将工作目录变换到 /usr/local/src 底下，并且解开 /tmp/etc.tar.gz ，<br> # 则解开的目录会在 /usr/local/src/etc 呢！另外，如果您进入 /usr/local/src/etc<br> # 则会发现，该目录下的文件属性与 /etc/ 可能会有所不同喔！<br> 范例四：在 /tmp 底下，我只想要将 /tmp/etc.tar.gz 内的 etc/passwd 解开而已<br> [root@linux ~]# cd /tmp<br> [root@linux tmp]# tar -zxvf /tmp/etc.tar.gz etc/passwd<br> # 我可以透过 tar -ztvf 来查阅 tarfile 内的文件名称，如果单只要一个文件，<br> # 就可以透过这个方式来下达！注意到！ etc.tar.gz 内的根目录 / 是被拿掉了！<br> 范例五：将 /etc/ 内的所有文件备份下来，并且保存其权限！<br> [root@linux ~]# tar -zxvpf /tmp/etc.tar.gz /etc<br> # 这个 -p 的属性是很重要的，尤其是当您要保留原本文件的属性时！<br> 范例六：在 /home 当中，比 2005/06/01 新的文件才备份<br> [root@linux ~]# tar -N “2005/06/01” -zcvf home.tar.gz /home<br> 范例七：我要备份 /home, /etc ，但不要 /home/dmtsai<br> [root@linux ~]# tar –exclude /home/dmtsai -zcvf myfile.tar.gz /home/* /etc<br> 范例八：将 /etc/ 打包后直接解开在 /tmp 底下，而不产生文件！<br> [root@linux ~]# cd /tmp<br> [root@linux tmp]# tar -cvf - /etc | tar -xvf -<br> # 这个动作有点像是 cp -r /etc /tmp 啦～依旧是有其有用途的！<br> # 要注意的地方在於输出档变成 - 而输入档也变成 - ，又有一个 | 存在～<br> # 这分别代表 standard output, standard input 与管线命令啦！</p>
-<h4 id="2-gunzip"><a href="#2-gunzip" class="headerlink" title="2:gunzip"></a>2:gunzip</h4><p> gunzip(gnu unzip)<br> 功能说明：解压文件。<br> 语　　法：gunzip [-acfhlLnNqrtvV][-s ][文件…] 或 gunzip [-acfhlLnNqrtvV][-s ][目录]<br> 补充说明：gunzip是个使用广泛的解压缩程序，它用于解开被gzip压缩过的文件，这些压缩文件预设最后的扩展名为”.gz”。<br> 事实上gunzip就是gzip的硬连接，因此不论是压缩或解压缩，都可通过gzip指令单独完成。<br> 参　　数：<br>　-a或–ascii 　使用ASCII文字模式。<br>　-c或–stdout或–to-stdout 　把解压后的文件输出到标准输出设备。<br>　-f或-force 　强行解开压缩文件，不理会文件名称或硬连接是否存在以及该文件是否为符号连接。<br>　-h或–help 　在线帮助。<br>　-l或–list 　列出压缩文件的相关信息。<br>　-L或–license 　显示版本与版权信息。<br>　-n或–no-name 　解压缩时，若压缩文件内含有远来的文件名称及时间戳记，则将其忽略不予处理。<br>　-N或–name 　解压缩时，若压缩文件内含有原来的文件名称及时间戳记，则将其回存到解开的文件上。<br>　-q或–quiet 　不显示警告信息。<br>　-r或–recursive 　递归处理，将指定目录下的所有文件及子目录一并处理。<br>　-S或–suffix 　更改压缩字尾字符串。<br>　-t或–test 　测试压缩文件是否正确无误。<br>　-v或–verbose 　显示指令执行过程。<br>　-V或–version 显示版本信息。</p>
-<h4 id="3-gzip"><a href="#3-gzip" class="headerlink" title="3:gzip"></a>3:gzip</h4><p> gzip命令<br> 关键词： gzip<br> gzip命令<br> 减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。<br> gzip是在Linux系统中经常使用的一个对文件进行压缩和解压缩的命令，既方便又好用。<br> 语法：gzip [选项] 压缩（解压缩）的文件名<br> 各选项的含义：<br> -c 将输出写到标准输出上，并保留原有文件。<br> -d 将压缩文件解压。<br> -l 对每个压缩文件，显示下列字段：<br> 压缩文件的大小<br> 未压缩文件的大小<br> 压缩比<br> 未压缩文件的名字<br> -r 递归式地查找指定目录并压缩其中的所有文件或者是解压缩。<br> -t 测试，检查压缩文件是否完整。<br> -v 对每一个压缩和解压的文件，显示文件名和压缩比。<br> -num 用指定的数字num调整压缩的速度，-1或–fast表示最快压缩方法（低压缩比），-9或–best表示最慢压缩方法（高压缩比）。<br> 系统缺省值为6。<br> 假设一个目录/home下有文件mm.txt、sort.txt、xx.com。<br> 例1：把/home目录下的每个文件压缩成.gz文件。<br> $ cd /home<br> $ gzip *<br> $ ls<br> m.txt.gz sort.txt.gz xx.com.gz<br> 例2：把例1中每个压缩的文件解压，并列出详细的信息。<br> $ gzip -dv *<br> mm.txt.gz 43.1%—–replaced with mm.txt<br> sort.txt.gz 43.1%—–replaced with sort.txt<br> xx.com.gz 43.1%—–replaced with xx.com<br> $ ls<br> mm.txt sort.txt xx.com<br>　<br> 例3：详细显示例1中每个压缩的文件的信息，并不解压。<br> $ gzip -l *<br> compressed uncompr. ratio uncompressed_name<br> 277 445 43.1% mm.txt<br> 278 445 43.1% sort.txt<br> 277 445 43.1% xx.com<br> $ ls<br> mm.txt.gz sort.txt.gz xx.com.gz<br> 例4：压缩一个tar备份文件，如usr.tar，此时压缩文件的扩展名为.tar.gz<br> $ gzip usr.tar<br> $ ls<br> usr.tar.gz</p>
-<h4 id="4-unzip命令"><a href="#4-unzip命令" class="headerlink" title="4:unzip命令"></a>4:unzip命令</h4><p> 用MS Windows下的压缩软件winzip压缩的文件如何在Linux系统下展开呢？可以用unzip命令，该命令用于解扩展名为.zip的压缩文件。<br> 语法：unzip [选项] 压缩文件名.zip<br> 各选项的含义分别为：<br>  -x 文件列表 解压缩文件，但不包括指定的file文件。<br>  -v 查看压缩文件目录，但不解压。<br>  -t 测试文件有无损坏，但不解压。<br>  -d 目录 把压缩文件解到指定目录下。<br>  -z 只显示压缩文件的注解。<br>  -n 不覆盖已经存在的文件。<br>  -o 覆盖已存在的文件且不要求用户确认。<br>  -j 不重建文档的目录结构，把所有文件解压到同一目录下。<br>  例1：将压缩文件text.zip在当前目录下解压缩。<br>  $ unzip text.zip<br>　<br>  例2：将压缩文件text.zip在指定目录/tmp下解压缩，如果已有相同的文件存在，要求unzip命令不覆盖原先的文件。<br>  $ unzip -n text.zip -d /tmp<br>　<br>  例3：查看压缩文件目录，但不解压。<br>  $ unzip -v text.zip</p>
-<h4 id="6-zgrep命令"><a href="#6-zgrep命令" class="headerlink" title="6:zgrep命令"></a>6:zgrep命令</h4><p>  这个命令的功能是在压缩文件中寻找匹配的正则表达式，用法和grep命令一样，只不过操作的对象是压缩文件。<br>  如果用户想看看在某个压缩文件中有没有某一句话，便可用zgrep命令。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir myC  #创建一个文件夹来作为练习C语言的根目录</span><br><span class="line">mkdir test01 #创建第一个测试文件夹</span><br><span class="line">touch main.c #创建一个.c文件</span><br><span class="line">gedit ./main.c # 使用gedit来编辑这个.c文件</span><br></pre></td></tr></table></figure>
 
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/linux/" rel="tag">linux</a>
-                </div>
-            </div>
+<p>在打开的编辑窗口里写入:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">puts</span>(<span class="string">"你好!"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>ctrl s 保存编辑后的文件,关闭窗口;</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc ./main.c #使用gcc编译指令编译和链接刚才写好的.c文件</span><br></pre></td></tr></table></figure>
+
+<p>此时在此文件下生成了一个a.out可执行文件</p>
+<blockquote>
+<p>linux下文件的类型识别不以后缀名为判断依据</p>
+</blockquote>
+<p>执行这个可执行文件:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./a.out</span><br></pre></td></tr></table></figure>
+
+<p>效果如下:</p>
+<p>![2020-04-04 10-30-31 的屏幕截图](/home/rxz/hexo/source/_posts/linux-下复习c语言编程日记-长期更新.assets/2020-04-04 10-30-31 的屏幕截图.png)</p>
+
         </div>
         
         
@@ -179,80 +191,11 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<a class="button is-info donate">
-    <span class="icon is-small">
-        <i class="fab fa-alipay"></i>
-    </span>
-    <span>支付宝</span>
-    <div class="qrcode"><img src="/images/alipay.jpg" alt="支付宝"></div>
-</a>
-
-                
-                
-<a class="button is-success donate">
-    <span class="icon is-small">
-        <i class="fab fa-weixin"></i>
-    </span>
-    <span>微信</span>
-    <div class="qrcode"><img src="/images/wechat.jpg" alt="微信"></div>
-</a>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/04/04/linux-%E4%B8%8B%E5%A4%8D%E4%B9%A0c%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E6%97%A5%E8%AE%B0-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">linux 下复习c语言编程日记(长期更新)</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/30/linux%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4%E5%AD%A6%E4%B9%A0/">
-                <span class="level-item">linux基础指令学习</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
 
 
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
-<script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: false,
-        verify: false,
-        app_id: '3Dqim3295ocyjcjiolHmLEUU-gzGzoHsz',
-        app_key: 'TqT0rDkVJJGwwjkGNlt2H1tF',
-        placeholder: 'Say something...'
-    });
-</script>
-
-    </div>
-</div>
 </div>
                 
 
@@ -698,7 +641,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="linux下压缩和解压缩指令" height="28">
+                    <img src="/images/logo.png" alt="梦见明日" height="28">
                 
                 </a>
                 <p class="is-size-7">
