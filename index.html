@@ -73,8 +73,9 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="is-3-column">
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
-        var windowWidth = 500;
+        var windowWidth = $(window).width();
         if (windowWidth > 480) {
           document.write('<script type="text/javascript" src="/js/snow.js"><\/script>');
         }
