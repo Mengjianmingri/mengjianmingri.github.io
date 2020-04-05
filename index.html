@@ -134,7 +134,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 222 个字)
+                    6 分钟 读完 (大约 947 个字)
                 </span>
                 
                 
@@ -167,6 +167,46 @@
 </blockquote>
 <p>执行这个可执行文件:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./a.out</span><br></pre></td></tr></table></figure>
+
+<h2 id="2020-04-05"><a href="#2020-04-05" class="headerlink" title="2020.04.05"></a>2020.04.05</h2><p>头文件: </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;头文件&gt; // 常用的有stdio.h(输入输出函数), math(数学函数)和string.h(字符和字符串函数)等</span></span></span><br></pre></td></tr></table></figure>
+
+<p>创建并编写test02.c文件</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> m;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">min</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a, b;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\nEnter two Numbers:"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d,%d"</span>,&amp;a,&amp;b);</span><br><span class="line">	m = <span class="built_in">min</span>(a,b);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Minimum:%d\n"</span>,m);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">min</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> t = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span>(x&lt;y)&#123;</span><br><span class="line">		t = x;	</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		t = y;		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span>(t);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>编译链接:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc ./a.out</span><br></pre></td></tr></table></figure>
+
+<p>执行:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">rxz@mengjianmingri:~/myC/test01$ ./a.out </span><br><span class="line"></span><br><span class="line">Enter two Numbers:45,78</span><br><span class="line">Minimum:45</span><br><span class="line">rxz@mengjianmingri:~/myC/test01$ ./a.out </span><br><span class="line"></span><br><span class="line">Enter two Numbers:74,12</span><br><span class="line">Minimum:12</span><br></pre></td></tr></table></figure>
+
+<p>c语言结构特点总结:</p>
+<blockquote>
+<p>一个c语言源程序由一个或多个源文件组成</p>
+<p>每个源文件可以由一个或多个函数组成</p>
+<p>一个源程序不论由多少文件组成,都有且只能有一个main()函数</p>
+<p>源程序中可以有预处理命令(#include命令仅为一种),预处理命令通常应放在源文件或源程序的最前面</p>
+<p>每一个说明每一个语句都必须以分号结尾,但预处理命令,函数头和大括号之后不能加分号</p>
+<p>关键字,标识符之间必须至少加上一个空格以示间隔,若有明显的间隔府,也可以不再加空格来间隔</p>
+</blockquote>
+<h3 id="C语言的数据结构"><a href="#C语言的数据结构" class="headerlink" title="C语言的数据结构"></a>C语言的数据结构</h3><p>在c语言之中数据结构可分为四大类:基本数据类型,构造数据类型,指针数据类型和空类型</p>
+<blockquote>
+<p>基本数据类型: 其值不可再分解为其他数据类型,即是自我说明的(整型,字符型,实型(单精度和双精度),枚举型)</p>
+<p>构造数据类型: 由基本数据类型和其他构造数据类型复合而成(数组型,结构体型,共用体型)</p>
+<p>指针类型: 特殊且重要 ,指针的值用来表示某个变量在内存中的地址,指针变量的取值类似整型,但二者是完全不同的量</p>
+<p>空类型: 所有基本数据类型的基础,在调用函数值时,通常向调用者返回一个函数值,但有的函数不需要向调用者返回函数值,这种函数可被定义为空类型,类型说明符为void</p>
+</blockquote>
+<blockquote>
+<p>#define 是一条预处理命令(预处理命令都以”#”开头),称为宏定义命令(在后面<br>预处理程序中将进一步介绍),其功能是把一个标识符定义为其后的常量值。一经定<br>义,以后在程序中所有出现该标识符的地方均代之以常量值。<br>#define 语句不以分号结尾,它可以被放于源代码的任何位置。不过在定义常量<br>时,只有在它定义之后的源代码中,它才有效。</p>
+</blockquote>
+<p>如:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MM 111111 <span class="comment">//将常量值111111用字符常量MM来代替</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="const关键字"><a href="#const关键字" class="headerlink" title="const关键字"></a>const关键字</h3><blockquote>
+<p>其实跟java中的final很类似</p>
+</blockquote>
+<p>如:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">float</span> pi = <span class="number">3.1415926</span> <span class="comment">//因为有效位数的限制,后三位不起作用,且pi此时可以看成一个不可再被修改的常量</span></span><br></pre></td></tr></table></figure>
 
 
         </div>
