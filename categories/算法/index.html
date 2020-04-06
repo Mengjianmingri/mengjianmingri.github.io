@@ -7,21 +7,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签 - 梦见明日</title>
+<title>分类: 算法 - 梦见明日</title>
 
 
     <meta name="description" content="梦见明日的博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="梦见明日">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:url" content="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="梦见明日">
 <meta property="og:description" content="梦见明日的博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:author" content="Ren Qinghe">
-<meta property="article:tag" content="C">
-<meta property="article:tag" content="linux">
-<meta property="article:tag" content="Algorithm,java">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
@@ -98,7 +95,7 @@
                 <a class="navbar-item"
                 href="/categories">分类</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/tags">标签</a>
                 
             </div>
@@ -119,39 +116,87 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/categories">分类</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">算法</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-06T13:21:55.000Z">2020-04-06</time>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/Algorithm-java/">
-                        <span class="tag">Algorithm,java</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
                 </div>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/C/">
-                        <span class="tag">C</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/linux/">
-                        <span class="tag">linux</span>
-                        <span class="tag is-grey">2</span>
-                    </a>
-                </div>
+                <span class="level-item has-text-grey">
+                    
+                    
+                    11 分钟 读完 (大约 1605 个字)
+                </span>
+                
                 
             </div>
         </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/04/06/%E4%B9%9D%E7%A7%8D%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">九种经典排序算法</a>
+            
+        </h1>
+        <div class="content">
+            <p> 吸取了去年字节跳动面试时在算法上的惨痛教训后,今年春招那一阵我也是恶补算法,首先攻克的就是九种经典排序算法:</p>
+<blockquote>
+<p>选泡插 快归堆希桶计基</p>
+</blockquote>
+<p>我先把我当时安排完这九种算法后写的心得po在下面,之后也会继续复习着算法长期更新此文至复习完</p>
+<p>我当时写的这九种算法的完整代码的仓库: <a href="https://github.com/Mengjianmingri/myAlgorithm">https://github.com/Mengjianmingri/myAlgorithm</a></p>
+<p>当然,是java,毕竟还是要吃高斯林祖师爷赏的这口饭</p>
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序:"></a>选择排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最简单也最没用,即一遍遍的过滤数组,找到最小的数和最前面做交换;单指针记录此次遍历中最小值的索引;</span><br></pre></td></tr></table></figure>
+
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序:"></a>冒泡排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">两两比较,后一个数比前一个数大就做交换,同样是单指针,也是没用的算法;</span><br></pre></td></tr></table></figure>
+
+<h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序:"></a>插入排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">即从索引1处开始和前面的数做比较找到当前它应该在的位置,移位,就是摸扑克排顺序的过程,在简单排序中最常用;</span><br></pre></td></tr></table></figure>
+
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序:"></a>希尔排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">基于插入排序,可以看作多线程版插排,即设置一个步长,每一轮比较步长间隔处的数,使用插排;特点是间隔大移动次数少,间隔小移动距离短(移位法);</span><br></pre></td></tr></table></figure>
+
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序:"></a>归并排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.使用递归思想,把数组分为左右两部分,假设左右两部分都是有序的,然后继续往下假设直到分成子数组只有一个数或两个数;</span><br><span class="line">2.现在子数组有序了,此时分配一个新数组,长度等于两个子数组长度和,定义三个指针,左指针指第一个子数组的最左边,右指针指向第二个子数组的最左边</span><br><span class="line">  第三个指针指向新数组的最左边,比较这两个指针处的值,把更小的那个值赋给新数组指针处,同时移动左右指针中指向更小值的那个指针和新数组指针</span><br><span class="line">  直到左右指针中其中一个移到了它的最大值,这时把另一个没达到最大值的左右指针后面的数直接按顺序赋给新数组指针处,直到新数组指针到达最大值</span><br><span class="line">  此时左右两个指针也都到达了各自的最大值,此次归并结束,把新数组赋值回原数组对应位置(即从左指针到右指针能移动到的最大值处)</span><br><span class="line">3.编写递归方法,分四步:(1)把当前数组分为两部分;(2)左边排序;(3)右边排序;(4)归并排序;</span><br><span class="line">4.归并排序是java对象的默认排序算法(要经过判断),可以实现稳定排序,最好最坏时间复杂度都是O(N*logN),个人觉得是比较完美的一种算法;</span><br></pre></td></tr></table></figure>
+
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序:"></a>快速排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.使用递归思想,选定一当前数组中的数当轴,然后把当前数组排序成轴左边都比轴小,右边都比轴大,然后轴左右两边的数组再各自选定一个轴,排序,递归下去;</span><br><span class="line">2.经典单轴快排:选定当前数组最后一个数做轴,设置左右两个指针,左指针指向当前数组最左端,右指针指向轴处索引减一,左右指针</span><br><span class="line">  不断向中间靠近,左指针遇到比轴大的数停下,右指针遇到比轴小的数停下,只有在左右指针同时停止时,交换左右指针指向的值,然后左右指针继续向中间靠近,当左右指针变为相邻那一刻时,停止左右指针变化且不交换对应值,把右指针处值和轴做交换,一次快排结束</span><br><span class="line">3.编写递归方法,分四步:(1)选定一个轴[轴的选取直接影响快排的时间复杂度];</span><br><span class="line">  (2)对当前数组快速排序,确定轴应该在的位置;(3)轴左边排序;(4)轴右边排序;</span><br><span class="line">4.快速排序的轴选定很重要,直接影响时间复杂度,平均时间复杂度和最好时间复杂度都是O(N*logN),最坏时间复杂度是O(N^2)</span><br><span class="line">  快排是不稳定的;</span><br></pre></td></tr></table></figure>
+
+<h2 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序:"></a>计数排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">桶思想算法,但局限性较大,即首先要确定当前数组中值的取值范围,定义一个按照这个范围的长度的新数组,遍历原数组,把遍历出</span><br><span class="line">的值对应到新数组的索引,把新数组此索引处值加一;</span><br><span class="line">遍历完原数组后,定义一个指针指向新数组索引为1处,把此处的值变为指针前一个索引处的值和自己的值的和,向后移动指针,创建一个最终数组长度等于原数组,</span><br><span class="line">倒着遍历原数组的值,把这个值对应成新数组索引并拿到新数组这个索引处的值(并对这个新数组的值进行减减操作),这个值减一就是原数组值在最终数组中应该放入的位置</span><br><span class="line">遍历完原数组,最终数组里就是排序好的原数组,并且是稳定的;</span><br><span class="line">如果不要求稳定性则不需要累加新数组而且最后不需要倒着遍历原数组,实现简单很多,具体见代码</span><br></pre></td></tr></table></figure>
+
+<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序:"></a>基数排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基数排序也是桶思想,创建一个二维数组作为桶,一维索引长度等于原数组最大值的位数(就是几位数)遍历原数组,按位数的值存入桶,并设置一个新数组长度等于最大位数记录桶的</span><br><span class="line">对应一维索引处放了几个值,遍历完再把桶里的数据按照新数组里的值拿出来放回原数组,然后置空新数组;</span><br><span class="line">接下来提高位数再次遍历原数组,思路和实现都简单;</span><br><span class="line">桶排序思想实质上是用空间换时间;</span><br></pre></td></tr></table></figure>
+
+<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序:"></a>桶排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用的很少,也要先确定原数组值的取值范围,把这个范围分成几份,每份对应一个桶,遍历原数组存入对应的桶,遍历完后再在每个桶内部排序后取出;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
     </div>
-</div></div>
+</div>
+
+
+
+
+
+
+
+
+</div>
                 
 
 
