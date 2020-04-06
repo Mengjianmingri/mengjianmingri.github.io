@@ -7,13 +7,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: linux - 梦见明日</title>
+<title>标签: java - 梦见明日</title>
 
 
     <meta name="description" content="梦见明日的博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="梦见明日">
-<meta property="og:url" content="http://yoursite.com/tags/linux/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/java/index.html">
 <meta property="og:site_name" content="梦见明日">
 <meta property="og:description" content="梦见明日的博客">
 <meta property="og:locale" content="zh_CN">
@@ -121,7 +121,7 @@
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
             <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">linux</a></li>
+            <li class="is-active"><a href="#" aria-current="page">java</a></li>
         </ul>
         </nav>
     </div>
@@ -134,17 +134,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-04-02T00:47:54.000Z">2020-04-02</time>
+                <time class="level-item has-text-grey" datetime="2020-04-06T13:21:55.000Z">2020-04-06</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/linux-shell/">linux shell</a>
+                <a class="has-link-grey -link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    16 分钟 读完 (大约 2472 个字)
+                    11 分钟 读完 (大约 1605 个字)
                 </span>
                 
                 
@@ -153,123 +153,34 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/04/02/linux%E4%B8%8B%E5%8E%8B%E7%BC%A9%E5%92%8C%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%8C%87%E4%BB%A4/">linux下压缩和解压缩指令</a>
+                <a class="has-link-black-ter" href="/2020/04/06/%E4%B9%9D%E7%A7%8D%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">九种经典排序算法</a>
             
         </h1>
         <div class="content">
-            <h2 id="关于压缩和解压缩命令"><a href="#关于压缩和解压缩命令" class="headerlink" title="关于压缩和解压缩命令"></a>关于压缩和解压缩命令</h2><p>之前在win10时把所有本地歌曲压缩成了zip包放到了移动硬盘里备了份,足足有9个G,昨天在ubuntu18.04下想用图形化直接解压到网易云的音乐存储目录,但解压出来的歌曲的所有信息全都变成了乱码,但歌曲播放还是正常的,显然这是编码解码不一致造成的 ,因为图形化解压没法指定字符集,因此还是使用了命令行来解决了这个问题,同时把在网上查到的一些比较全的压缩解压缩指令记个笔记;</p>
-<h3 id="如何解决的我这个问题"><a href="#如何解决的我这个问题" class="headerlink" title="如何解决的我这个问题:"></a>如何解决的我这个问题:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip -O GBK  *.zip # GBK为你要指定的解码字符集,要与压缩时的字符集对应上才不会乱码,win下压缩的多为GBK编码</span><br></pre></td></tr></table></figure>
-
-<h3 id="其他压缩解压命令"><a href="#其他压缩解压命令" class="headerlink" title="其他压缩解压命令"></a>其他压缩解压命令</h3><blockquote>
-<p>以下转自 <a href="https://blog.csdn.net/u014704496/article/details/38944567">https://blog.csdn.net/u014704496/article/details/38944567</a></p>
-</blockquote>
-<h4 id="1-tar"><a href="#1-tar" class="headerlink" title="1:tar"></a>1:tar</h4><p> tar [-cxtzjvfpPN] 文件与目录 ….<br> 参数：<br> -c ：建立一个压缩文件的参数指令(create 的意思)；<br> -x ：解开一个压缩文件的参数指令！<br> -t ：查看 tarfile 里面的文件！<br> 特别注意，在参数的下达中， c/x/t 仅能存在一个！不可同时存在！<br> 因为不可能同时压缩与解压缩。<br> -z ：是否同时具有 gzip 的属性？亦即是否需要用 gzip 压缩？<br> -j ：是否同时具有 bzip2 的属性？亦即是否需要用 bzip2 压缩？<br> -v ：压缩的过程中显示文件！这个常用，但不建议用在背景执行过程！<br> -f ：使用档名，请留意，在 f 之后要立即接档名喔！不要再加参数！<br>　　　例如使用『 tar -zcvfP tfile sfile』就是错误的写法，要写成<br>　　　『 tar -zcvPf tfile sfile』才对喔！<br> -p ：使用原文件的原来属性（属性不会依据使用者而变）<br> -P ：可以使用绝对路径来压缩！<br> -N ：比后面接的日期(yyyy/mm/dd)还要新的才会被打包进新建的文件中！<br> –exclude FILE：在压缩的过程中，不要将 FILE 打包！<br> 范例：<br> 范例一：将整个 /etc 目录下的文件全部打包成为 /tmp/etc.tar<br> [root@linux ~]# tar -cvf /tmp/etc.tar /etc<br> 范例二：查阅上述 /tmp/etc.tar.gz 文件内有哪些文件？<br> [root@linux ~]# tar -ztvf /tmp/etc.tar.gz<br> # 由于我们使用 gzip 压缩，所以要查阅该 tar file 内的文件时，<br> # 就得要加上 z 这个参数了！这很重要的！<br> 范例三：将 /tmp/etc.tar.gz 文件解压缩在 /usr/local/src 底下<br> [root@linux ~]# cd /usr/local/src<br> [root@linux src]# tar -zxvf /tmp/etc.tar.gz<br> # 在预设的情况下，我们可以将压缩档在任何地方解开的！以这个范例来说，<br> # 我先将工作目录变换到 /usr/local/src 底下，并且解开 /tmp/etc.tar.gz ，<br> # 则解开的目录会在 /usr/local/src/etc 呢！另外，如果您进入 /usr/local/src/etc<br> # 则会发现，该目录下的文件属性与 /etc/ 可能会有所不同喔！<br> 范例四：在 /tmp 底下，我只想要将 /tmp/etc.tar.gz 内的 etc/passwd 解开而已<br> [root@linux ~]# cd /tmp<br> [root@linux tmp]# tar -zxvf /tmp/etc.tar.gz etc/passwd<br> # 我可以透过 tar -ztvf 来查阅 tarfile 内的文件名称，如果单只要一个文件，<br> # 就可以透过这个方式来下达！注意到！ etc.tar.gz 内的根目录 / 是被拿掉了！<br> 范例五：将 /etc/ 内的所有文件备份下来，并且保存其权限！<br> [root@linux ~]# tar -zxvpf /tmp/etc.tar.gz /etc<br> # 这个 -p 的属性是很重要的，尤其是当您要保留原本文件的属性时！<br> 范例六：在 /home 当中，比 2005/06/01 新的文件才备份<br> [root@linux ~]# tar -N “2005/06/01” -zcvf home.tar.gz /home<br> 范例七：我要备份 /home, /etc ，但不要 /home/dmtsai<br> [root@linux ~]# tar –exclude /home/dmtsai -zcvf myfile.tar.gz /home/* /etc<br> 范例八：将 /etc/ 打包后直接解开在 /tmp 底下，而不产生文件！<br> [root@linux ~]# cd /tmp<br> [root@linux tmp]# tar -cvf - /etc | tar -xvf -<br> # 这个动作有点像是 cp -r /etc /tmp 啦～依旧是有其有用途的！<br> # 要注意的地方在於输出档变成 - 而输入档也变成 - ，又有一个 | 存在～<br> # 这分别代表 standard output, standard input 与管线命令啦！</p>
-<h4 id="2-gunzip"><a href="#2-gunzip" class="headerlink" title="2:gunzip"></a>2:gunzip</h4><p> gunzip(gnu unzip)<br> 功能说明：解压文件。<br> 语　　法：gunzip [-acfhlLnNqrtvV][-s ][文件…] 或 gunzip [-acfhlLnNqrtvV][-s ][目录]<br> 补充说明：gunzip是个使用广泛的解压缩程序，它用于解开被gzip压缩过的文件，这些压缩文件预设最后的扩展名为”.gz”。<br> 事实上gunzip就是gzip的硬连接，因此不论是压缩或解压缩，都可通过gzip指令单独完成。<br> 参　　数：<br>　-a或–ascii 　使用ASCII文字模式。<br>　-c或–stdout或–to-stdout 　把解压后的文件输出到标准输出设备。<br>　-f或-force 　强行解开压缩文件，不理会文件名称或硬连接是否存在以及该文件是否为符号连接。<br>　-h或–help 　在线帮助。<br>　-l或–list 　列出压缩文件的相关信息。<br>　-L或–license 　显示版本与版权信息。<br>　-n或–no-name 　解压缩时，若压缩文件内含有远来的文件名称及时间戳记，则将其忽略不予处理。<br>　-N或–name 　解压缩时，若压缩文件内含有原来的文件名称及时间戳记，则将其回存到解开的文件上。<br>　-q或–quiet 　不显示警告信息。<br>　-r或–recursive 　递归处理，将指定目录下的所有文件及子目录一并处理。<br>　-S或–suffix 　更改压缩字尾字符串。<br>　-t或–test 　测试压缩文件是否正确无误。<br>　-v或–verbose 　显示指令执行过程。<br>　-V或–version 显示版本信息。</p>
-<h4 id="3-gzip"><a href="#3-gzip" class="headerlink" title="3:gzip"></a>3:gzip</h4><p> gzip命令<br> 关键词： gzip<br> gzip命令<br> 减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。<br> gzip是在Linux系统中经常使用的一个对文件进行压缩和解压缩的命令，既方便又好用。<br> 语法：gzip [选项] 压缩（解压缩）的文件名<br> 各选项的含义：<br> -c 将输出写到标准输出上，并保留原有文件。<br> -d 将压缩文件解压。<br> -l 对每个压缩文件，显示下列字段：<br> 压缩文件的大小<br> 未压缩文件的大小<br> 压缩比<br> 未压缩文件的名字<br> -r 递归式地查找指定目录并压缩其中的所有文件或者是解压缩。<br> -t 测试，检查压缩文件是否完整。<br> -v 对每一个压缩和解压的文件，显示文件名和压缩比。<br> -num 用指定的数字num调整压缩的速度，-1或–fast表示最快压缩方法（低压缩比），-9或–best表示最慢压缩方法（高压缩比）。<br> 系统缺省值为6。<br> 假设一个目录/home下有文件mm.txt、sort.txt、xx.com。<br> 例1：把/home目录下的每个文件压缩成.gz文件。<br> $ cd /home<br> $ gzip *<br> $ ls<br> m.txt.gz sort.txt.gz xx.com.gz<br> 例2：把例1中每个压缩的文件解压，并列出详细的信息。<br> $ gzip -dv *<br> mm.txt.gz 43.1%—–replaced with mm.txt<br> sort.txt.gz 43.1%—–replaced with sort.txt<br> xx.com.gz 43.1%—–replaced with xx.com<br> $ ls<br> mm.txt sort.txt xx.com<br>　<br> 例3：详细显示例1中每个压缩的文件的信息，并不解压。<br> $ gzip -l *<br> compressed uncompr. ratio uncompressed_name<br> 277 445 43.1% mm.txt<br> 278 445 43.1% sort.txt<br> 277 445 43.1% xx.com<br> $ ls<br> mm.txt.gz sort.txt.gz xx.com.gz<br> 例4：压缩一个tar备份文件，如usr.tar，此时压缩文件的扩展名为.tar.gz<br> $ gzip usr.tar<br> $ ls<br> usr.tar.gz</p>
-<h4 id="4-unzip命令"><a href="#4-unzip命令" class="headerlink" title="4:unzip命令"></a>4:unzip命令</h4><p> 用MS Windows下的压缩软件winzip压缩的文件如何在Linux系统下展开呢？可以用unzip命令，该命令用于解扩展名为.zip的压缩文件。<br> 语法：unzip [选项] 压缩文件名.zip<br> 各选项的含义分别为：<br>  -x 文件列表 解压缩文件，但不包括指定的file文件。<br>  -v 查看压缩文件目录，但不解压。<br>  -t 测试文件有无损坏，但不解压。<br>  -d 目录 把压缩文件解到指定目录下。<br>  -z 只显示压缩文件的注解。<br>  -n 不覆盖已经存在的文件。<br>  -o 覆盖已存在的文件且不要求用户确认。<br>  -j 不重建文档的目录结构，把所有文件解压到同一目录下。<br>  例1：将压缩文件text.zip在当前目录下解压缩。<br>  $ unzip text.zip<br>　<br>  例2：将压缩文件text.zip在指定目录/tmp下解压缩，如果已有相同的文件存在，要求unzip命令不覆盖原先的文件。<br>  $ unzip -n text.zip -d /tmp<br>　<br>  例3：查看压缩文件目录，但不解压。<br>  $ unzip -v text.zip</p>
-<h4 id="6-zgrep命令"><a href="#6-zgrep命令" class="headerlink" title="6:zgrep命令"></a>6:zgrep命令</h4><p>  这个命令的功能是在压缩文件中寻找匹配的正则表达式，用法和grep命令一样，只不过操作的对象是压缩文件。<br>  如果用户想看看在某个压缩文件中有没有某一句话，便可用zgrep命令。</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-30T07:29:39.000Z">2020-03-30</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/linux-shell/">linux shell</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    11 分钟 读完 (大约 1644 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/30/linux%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4%E5%AD%A6%E4%B9%A0/">linux基础指令学习</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="mkdir-创建目录"><a href="#mkdir-创建目录" class="headerlink" title="mkdir 创建目录"></a>mkdir 创建目录</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir myTest/test02  -p</span><br></pre></td></tr></table></figure>
-
+            <p> 吸取了去年字节跳动面试时在算法上的惨痛教训后,今年春招那一阵我也是恶补算法,首先攻克的就是九种经典排序算法:</p>
 <blockquote>
-<p> -p 递归地建立目录,即可以一次建立多层目录<br> -m 创建目录的时候直接设定权限</p>
+<p>选泡插 快归堆希桶计基</p>
 </blockquote>
-<h3 id="rmdir-删除目录-空文件夹"><a href="#rmdir-删除目录-空文件夹" class="headerlink" title="rmdir 删除目录(空文件夹)"></a>rmdir 删除目录(空文件夹)</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir myTest/test02  -p</span><br></pre></td></tr></table></figure>
+<p>我先把我当时安排完这九种算法后写的心得po在下面,之后也会继续复习着算法长期更新此文至复习完</p>
+<p>我当时写的这九种算法的完整代码的仓库: <a href="https://github.com/Mengjianmingri/myAlgorithm">https://github.com/Mengjianmingri/myAlgorithm</a></p>
+<p>当然,是java,毕竟还是要吃高斯林祖师爷赏的这口饭</p>
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序:"></a>选择排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最简单也最没用,即一遍遍的过滤数组,找到最小的数和最前面做交换;单指针记录此次遍历中最小值的索引;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>-p 递归删除此文件夹</p>
-</blockquote>
-<h3 id="ls-档案和目录的检视"><a href="#ls-档案和目录的检视" class="headerlink" title="ls 档案和目录的检视"></a>ls 档案和目录的检视</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ls [-aAdfFhilRS] 目录名称</span><br><span class="line">ls [--color=&#123;none,auto,always&#125;] 目录名称</span><br><span class="line">ls [--full-time] 目录名称 </span><br><span class="line"><span class="meta">#</span><span class="bash">例子如下</span></span><br><span class="line">ls -al ~ #列出所有文件夹及文件,包括隐藏文件和文件属性</span><br><span class="line">ls -alF --color=never ~ #不显示颜色,但在文件名末显示出该文件名代表的类型</span><br><span class="line"> ls -al --full-time ~  #完整呈现文件的修改时间</span><br><span class="line"><span class="meta"> #</span><span class="bash">同时,ll就相当于ls -l</span></span><br></pre></td></tr></table></figure>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序:"></a>冒泡排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">两两比较,后一个数比前一个数大就做交换,同样是单指针,也是没用的算法;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>-a ：全部的档案，连同隐藏档( 开头为 . 的档案) 一起列出来～<br>-A ：全部的档案，连同隐藏档，但不包括 . 与 .. 这两个目录，一起列出来～<br>-d ：仅列出目录本身，而不是列出目录内的档案数据<br>-f ：直接列出结果，而不进行排序 (ls 预设会以档名排序！)<br>-F ：根据档案、目录等信息，给予附加数据结构，例如：<br>       *：代表可执行档； /：代表目录； =：代表 socket 档案； |：代表             FIFO 档案；<br>-h ：将档案容量以人类较易读的方式(例如 GB, KB 等等)列出来；<br>-i ：列出 inode 位置，而非列出档案属性；<br>-l ：长数据串行出，包含档案的属性等等数据；<br>-n ：列出 UID 与 GID 而非使用者与群组的名称 (UID 与 GID 会在账号管理提到！)<br>-r ：将排序结果反向输出，例如：原本档名由小到大，反向则为由大到小；<br>-R ：连同子目录内容一起列出来；<br>-S ：以档案容量大小排序！<br>-t ：依时间排序<br>–color=never ：不要依据档案特性给予颜色显示；<br>–color=always ：显示颜色<br>–color=auto ：让系统自行依据设定来判断是否给予颜色<br>–full-time ：以完整时间模式 (包含年、月、日、时、分) 输出<br>–time={atime,ctime} ：输出 access 时间或 改变权限属性时间 (ctime)<br>而非内容变更时间 (modification time) </p>
-</blockquote>
-<h3 id="cp-复制-建立链接-比对"><a href="#cp-复制-建立链接-比对" class="headerlink" title="cp 复制,建立链接,比对"></a>cp 复制,建立链接,比对</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp [-adfilprsu] 复制源 粘贴处</span><br></pre></td></tr></table></figure>
+<h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序:"></a>插入排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">即从索引1处开始和前面的数做比较找到当前它应该在的位置,移位,就是摸扑克排顺序的过程,在简单排序中最常用;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>-a ：相当于 -pdr 的意思；<br>-d ：若来源文件为连结文件的属性(link file)，则复制连结文件属性而非档案本身；<br>-f ：为强制 (force) 的意思，若有重复或其它疑问时，不会询问使用者，而强制复制；<br>-i ：若目的檔(destination)已经存在时，在覆盖时会先询问是否真的动作！<br>-l ：进行硬式连结 (hard link) 的连结档建立，而非复制档案本身；<br>-p ：连同档案的属性一起复制过去，而非使用预设属性；<br>-r ：递归持续复制，用于目录的复制行为；<br>-s ：复制成为符号连结文件 (symbolic link)，亦即『快捷方式』档案；<br>-u ：若 destination 比 source 旧才更新 destination ！ </p>
-</blockquote>
-<h3 id="rm-删除目录或文件"><a href="#rm-删除目录或文件" class="headerlink" title="rm  删除目录或文件"></a>rm  删除目录或文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm [-fir] 文件或目录</span><br></pre></td></tr></table></figure>
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序:"></a>希尔排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">基于插入排序,可以看作多线程版插排,即设置一个步长,每一轮比较步长间隔处的数,使用插排;特点是间隔大移动次数少,间隔小移动距离短(移位法);</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>-f ：就是 force 的意思，强制移除；<br>-i ：互动模式，在删除前会询问使用者是否动作<br>-r ：递归删除啊！最常用在目录的删除了 </p>
-</blockquote>
-<h3 id="mv-移动目录或文件-剪切"><a href="#mv-移动目录或文件-剪切" class="headerlink" title="mv 移动目录或文件(剪切)"></a>mv 移动目录或文件(剪切)</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv [-fiu] 目录或文件名</span><br></pre></td></tr></table></figure>
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序:"></a>归并排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.使用递归思想,把数组分为左右两部分,假设左右两部分都是有序的,然后继续往下假设直到分成子数组只有一个数或两个数;</span><br><span class="line">2.现在子数组有序了,此时分配一个新数组,长度等于两个子数组长度和,定义三个指针,左指针指第一个子数组的最左边,右指针指向第二个子数组的最左边</span><br><span class="line">  第三个指针指向新数组的最左边,比较这两个指针处的值,把更小的那个值赋给新数组指针处,同时移动左右指针中指向更小值的那个指针和新数组指针</span><br><span class="line">  直到左右指针中其中一个移到了它的最大值,这时把另一个没达到最大值的左右指针后面的数直接按顺序赋给新数组指针处,直到新数组指针到达最大值</span><br><span class="line">  此时左右两个指针也都到达了各自的最大值,此次归并结束,把新数组赋值回原数组对应位置(即从左指针到右指针能移动到的最大值处)</span><br><span class="line">3.编写递归方法,分四步:(1)把当前数组分为两部分;(2)左边排序;(3)右边排序;(4)归并排序;</span><br><span class="line">4.归并排序是java对象的默认排序算法(要经过判断),可以实现稳定排序,最好最坏时间复杂度都是O(N*logN),个人觉得是比较完美的一种算法;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>-f ：force 强制的意思，强制直接移动而不询问；<br>-i ：若目标档案 (destination) 已经存在时，就会询问是否覆盖！<br>-u ：若目标档案已经存在，且 source 比较新，才会更新 (update) </p>
-</blockquote>
-<h2 id="文档查看"><a href="#文档查看" class="headerlink" title="文档查看"></a>文档查看</h2><h3 id="除去最常用的cat-more-less-外head-和-tail的用法"><a href="#除去最常用的cat-more-less-外head-和-tail的用法" class="headerlink" title="除去最常用的cat more less 外head 和 tail的用法:"></a>除去最常用的cat more less 外head 和 tail的用法:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">head -n 10 文件名  #显示文件的前十行</span><br><span class="line">tail -n 20 文件名  #显示文件的后20行</span><br></pre></td></tr></table></figure>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序:"></a>快速排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.使用递归思想,选定一当前数组中的数当轴,然后把当前数组排序成轴左边都比轴小,右边都比轴大,然后轴左右两边的数组再各自选定一个轴,排序,递归下去;</span><br><span class="line">2.经典单轴快排:选定当前数组最后一个数做轴,设置左右两个指针,左指针指向当前数组最左端,右指针指向轴处索引减一,左右指针</span><br><span class="line">  不断向中间靠近,左指针遇到比轴大的数停下,右指针遇到比轴小的数停下,只有在左右指针同时停止时,交换左右指针指向的值,然后左右指针继续向中间靠近,当左右指针变为相邻那一刻时,停止左右指针变化且不交换对应值,把右指针处值和轴做交换,一次快排结束</span><br><span class="line">3.编写递归方法,分四步:(1)选定一个轴[轴的选取直接影响快排的时间复杂度];</span><br><span class="line">  (2)对当前数组快速排序,确定轴应该在的位置;(3)轴左边排序;(4)轴右边排序;</span><br><span class="line">4.快速排序的轴选定很重要,直接影响时间复杂度,平均时间复杂度和最好时间复杂度都是O(N*logN),最坏时间复杂度是O(N^2)</span><br><span class="line">  快排是不稳定的;</span><br></pre></td></tr></table></figure>
 
-<h3 id="file-查看文件的类型"><a href="#file-查看文件的类型" class="headerlink" title="file 查看文件的类型"></a>file 查看文件的类型</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file 文件名 #文件的类型,例如二进制或data</span><br></pre></td></tr></table></figure>
+<h2 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序:"></a>计数排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">桶思想算法,但局限性较大,即首先要确定当前数组中值的取值范围,定义一个按照这个范围的长度的新数组,遍历原数组,把遍历出</span><br><span class="line">的值对应到新数组的索引,把新数组此索引处值加一;</span><br><span class="line">遍历完原数组后,定义一个指针指向新数组索引为1处,把此处的值变为指针前一个索引处的值和自己的值的和,向后移动指针,创建一个最终数组长度等于原数组,</span><br><span class="line">倒着遍历原数组的值,把这个值对应成新数组索引并拿到新数组这个索引处的值(并对这个新数组的值进行减减操作),这个值减一就是原数组值在最终数组中应该放入的位置</span><br><span class="line">遍历完原数组,最终数组里就是排序好的原数组,并且是稳定的;</span><br><span class="line">如果不要求稳定性则不需要累加新数组而且最后不需要倒着遍历原数组,实现简单很多,具体见代码</span><br></pre></td></tr></table></figure>
 
-<h2 id="文件的-查找"><a href="#文件的-查找" class="headerlink" title="文件的 查找"></a>文件的 查找</h2><h3 id="which"><a href="#which" class="headerlink" title="which"></a>which</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">which 文件名 [-a]  #-a是将所有符合条件的结果均列出</span><br></pre></td></tr></table></figure>
+<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序:"></a>基数排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">基数排序也是桶思想,创建一个二维数组作为桶,一维索引长度等于原数组最大值的位数(就是几位数)遍历原数组,按位数的值存入桶,并设置一个新数组长度等于最大位数记录桶的</span><br><span class="line">对应一维索引处放了几个值,遍历完再把桶里的数据按照新数组里的值拿出来放回原数组,然后置空新数组;</span><br><span class="line">接下来提高位数再次遍历原数组,思路和实现都简单;</span><br><span class="line">桶排序思想实质上是用空间换时间;</span><br></pre></td></tr></table></figure>
 
-<h3 id="whereis"><a href="#whereis" class="headerlink" title="whereis"></a>whereis</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whereis [-bmsu] 文件名</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>-b :只找 binary 的档案<br>-m :只找在说明文件 manual 路径下的档案<br>-s :只找 source 来源档案<br>-u :没有说明档的档案</p>
-</blockquote>
-<h3 id="locate"><a href="#locate" class="headerlink" title="locate"></a>locate</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locate 部分文件名 #locate 指令类似模糊查询</span><br></pre></td></tr></table></figure>
-
-<h3 id="find"><a href="#find" class="headerlink" title="find"></a>find</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find / -name passwd  #find指令的参数较复杂,这条范例是查找文件名为 passwd 的文件</span><br></pre></td></tr></table></figure>
-
-<h2 id="压缩文件处理"><a href="#压缩文件处理" class="headerlink" title="压缩文件处理"></a>压缩文件处理</h2><h3 id="compress-Z文件-很少使用"><a href="#compress-Z文件-很少使用" class="headerlink" title="compress     *.Z文件(很少使用)"></a>compress     *.Z文件(很少使用)</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">compress 文件名 #压缩此文件成*.Z格式</span><br><span class="line">compress -d  文件名 #解压此文件(前提是此文件是*.Z文件)</span><br><span class="line">compress -c 文件1 &gt; 文件2 #将文件1压缩为文件2的同时保留文件1</span><br></pre></td></tr></table></figure>
-
-<h3 id="gzip-zcat-gz-文件"><a href="#gzip-zcat-gz-文件" class="headerlink" title="gzip,zcat     *.gz 文件"></a>gzip,zcat     *.gz 文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gzip 文件1</span><br><span class="line">gzip -d 文件2</span><br><span class="line">zcat 文件2 #读取文件2解压后的内容</span><br><span class="line">gzip -9 -c man.config &gt; man.config.gz #-9压缩速度最慢但压缩后空间最小 ,-1反之,在1到9之间取值</span><br></pre></td></tr></table></figure>
-
-<h3 id="bzip2-bzcat-bz2-文件"><a href="#bzip2-bzcat-bz2-文件" class="headerlink" title="bzip2,bzcat    *.bz2  文件"></a>bzip2,bzcat    *.bz2  文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bzip2 文件1  #所有参数同上</span><br></pre></td></tr></table></figure>
-
-<h3 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar [-cxtzjvfpPN] 文件夹或文件</span><br><span class="line">tar -zxvf  *.tar.gz</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>-c ：建立一个压缩档案的参数指令(create 的意思)；<br>-x ：解开一个压缩档案的参数指令！<br>-t ：查看 tarfile 里面的档案！<br> 特别注意，在参数的下达中， c/x/t 仅能存在一个！不可同时存在！<br> 因为不可能同时压缩与解压缩。<br>-z ：是否同时具有 gzip 的属性？亦即是否需要用 gzip 压缩？<br>-j ：是否同时具有 bzip2 的属性？亦即是否需要用 bzip2 压缩？<br>-v ：压缩的过程中显示档案！这个常用，但不建议用在背景执行过程！<br>-f ：使用档名，请留意，在 f 之后要立即接档名喔！不要再加参数！<br> 例如使用『 tar -zcvfP tfile sfile』就是错误的写法，要写成<br> 『 tar -zcvPf tfile sfile』才对喔！<br>-p ：使用原档案的原来属性（属性不会依据使用者而变）<br>-P ：可以使用绝对路径来压缩！<br>-N ：比后面接的日期(yyyy/mm/dd)还要新的才会被打包进新建的档案中！<br>–exclude FILE：在压缩的过程中，不要将 FILE 打包,即排除某个文件</p>
-</blockquote>
-
+<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序:"></a>桶排序:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用的很少,也要先确定原数组值的取值范围,把这个范围分成几份,每份对应一个桶,遍历原数组存入对应的桶,遍历完后再在每个桶内部排序后取出;</span><br></pre></td></tr></table></figure>
         </div>
         
         
